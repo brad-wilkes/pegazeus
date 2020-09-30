@@ -1,0 +1,47 @@
+﻿@model Pegazeus.Models.PzformModel
+
+@{
+    ViewData["Title"] = "Pegazeus";
+}
+
+<h1>PzformView</h1>
+
+<h4>PzformModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="PzformView">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+
+            <fieldset id="custInfo">
+                <legend>
+                    Customer Information
+                </legend>
+                <input name="custname" id="custname" />
+                Name*
+                <input name="Address" id="Address" />
+                Address
+                <input name="City" id="City" />
+                City
+                <input name="State" id="State" />
+                State
+                <input name="zip" id="zip" />
+                Postal Code
+                <input name="email" id="email" />
+                E-mail Address
+            </fieldset>
+
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to Home Page</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
