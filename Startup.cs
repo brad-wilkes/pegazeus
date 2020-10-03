@@ -48,6 +48,9 @@ namespace Pegazeus
 
             app.UseEndpoints(endpoints =>
             {
+
+                endpoints.MapControllerRoute("Pzform", "Pegazeus/{*PzformView}",
+                    defaults: new { controller = "PzformController", action = "PzformView" });
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");

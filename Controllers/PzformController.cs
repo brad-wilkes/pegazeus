@@ -5,12 +5,15 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Encodings.Web;
 using Pegazeus.Models;
+using Microsoft.Extensions.Logging;
 using System.Diagnostics;
 
 namespace Pegazeus.Controllers
 {
     public class PzformController : Controller
     {
+        private readonly ILogger<HomeController> _logger;
+
         // GET: /Pegazeus/
         public string Index()
         {
