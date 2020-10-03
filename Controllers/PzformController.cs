@@ -24,5 +24,41 @@ namespace Pegazeus.Controllers
         {
             return "This is the Welcome action method...";
         }
+
+        public string FirstName(string Firstname)
+        {
+            string input = Firstname;
+            return input;
+        }
+
+        public string LastName(string Lastname)
+        {
+            string input = Lastname;
+            return input;
+        }
+
+        public string Address(string Address)
+        {
+            string input = Address;
+            return input;
+        }
+
+        public string City(string City)
+        {
+            string input = City;
+            return input;
+        }
+
+        public int Zip(int Zip)
+        {
+            int input = Zip;
+            return input;
+        }
+
+        public string Email(string Email)
+        {
+            string input = Email;
+            return input;
+        }
     }
 }
