@@ -9,20 +9,15 @@ namespace Pegazeus.Controllers
 {
     public class PzformController : Controller
     {
-        // 
         // GET: /Pegazeus/
-
         public string Index()
         {
-            return "This is my default action...";
+            return "This is default";
         }
-
-        // 
         // GET: /Pegazeus/Welcome/ 
-
         public string Welcome()
         {
-            return "This is the Welcome action method...";
+            return "This is the default Welcome action";
         }
 
         public string FirstName(string Firstname)
