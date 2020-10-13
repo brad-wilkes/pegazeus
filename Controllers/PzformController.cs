@@ -7,12 +7,41 @@ using System.Text.Encodings.Web;
 using Pegazeus.Models;
 using Microsoft.Extensions.Logging;
 using System.Diagnostics;
+using Microsoft.AspNetCore.Http;
 
 namespace Pegazeus.Controllers
 {
     public class PzformController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+
+        // POST: Pzform/Create
+        [HttpPost]
+        public ActionResult Create(FormCollection collection)
+        {
+            try
+            {
+                //Method 1: Using Component Name  
+
+                /*ViewData["Name"] = collection["Name"];
+                ViewData["City"] = collection["City"];
+                ViewData["Address"] = collection["Address"];*/
+
+                //Method 2: Using Component Index Position
+                ViewData["Firstname"] = collection[1];
+                ViewData["Lastname"] = collection[2];
+                ViewData["Address"] = collection[3];
+                ViewData["City"] = collection[4];
+                ViewData["Zip"] = collection[5;
+                ViewData["Email"] = collection[6];
+
+                return View("Index");
+            }
+            catch
+            {
+                return View();
+            }
+        }
 
         // GET: /Pegazeus/
         public string Index()
