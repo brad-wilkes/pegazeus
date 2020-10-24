@@ -23,17 +23,20 @@ namespace Pegazeus.Controllers
             {
                 //Method 1: Using Component Name  
 
-                /*ViewData["Name"] = collection["Name"];
+                ViewData["Name"] = collection["Name"];
                 ViewData["City"] = collection["City"];
-                ViewData["Address"] = collection["Address"];*/
+                ViewData["Address"] = collection["Address"];
+                ViewData["City"] = collection["City"];
+                ViewData["Zip"] = collection["Zip"];
+                ViewData["Email"] = collection["Email"];
 
-                //Method 2: Using Component Index Position
+               /* Method 2: Using Component Index Position
                 ViewData["Firstname"] = collection[1];
                 ViewData["Lastname"] = collection[2];
                 ViewData["Address"] = collection[3];
                 ViewData["City"] = collection[4];
-                ViewData["Zip"] = collection[5;
-                ViewData["Email"] = collection[6];
+                ViewData["Zip"] = collection[5];
+                ViewData["Email"] = collection[6]; */
 
                 return View("Index");
             }
