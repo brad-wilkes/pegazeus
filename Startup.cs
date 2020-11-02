@@ -50,8 +50,8 @@ namespace Pegazeus
             {
 
                 endpoints.MapControllerRoute(
-                    name: "Pzform", 
-                    pattern: "{controller=PzformView}/{action=PzformView}/{id?}");
+                    name: "Form", 
+                    pattern: "{controller=Form}/{action=Create}/{id?}");
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");

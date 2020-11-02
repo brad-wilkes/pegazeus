@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Pegazeus.Models
 {
-    public class PzformModel
+    public class FormModel
     {
         public int Id { get; set; }
 

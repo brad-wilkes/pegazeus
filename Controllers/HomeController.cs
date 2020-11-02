@@ -28,7 +28,7 @@ namespace Pegazeus.Controllers
             return View();
         }
 
-        public IActionResult PzformView()
+        public IActionResult Form()
         {
             return View();
         }

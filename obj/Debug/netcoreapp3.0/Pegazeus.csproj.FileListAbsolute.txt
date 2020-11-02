@@ -108,4 +108,4 @@ C:\Users\rbwil\source\repos\Pegazeus\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.C
 C:\Users\rbwil\source\repos\Pegazeus\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\rbwil\source\repos\Pegazeus\obj\Debug\netcoreapp3.0\Pegazeus.csproj.CoreCompileInputs.cache
 C:\Users\rbwil\source\repos\Pegazeus\obj\Debug\netcoreapp3.0\Pegazeus.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\rbwil\source\repos\Pegazeus\obj\Debug\netcoreapp3.0\Razor\Views\Home\PzformView.cshtml.g.cs
+C:\Users\rbwil\source\repos\Pegazeus\obj\Debug\netcoreapp3.0\Razor\Views\Home\Form.cshtml.g.cs

@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Http;
 
 namespace Pegazeus.Controllers
 {
-    public class PzformController : Controller
+    public class FormController : Controller
     {
         private readonly ILogger<HomeController> _logger;
 
